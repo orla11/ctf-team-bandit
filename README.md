@@ -20,7 +20,7 @@ This project is POC to showcase the power of multi-agent conversations patterns 
 
 ## Requirements
 
-- Poetry python package manager installed
+- [Poetry](https://python-poetry.org/) python package manager installed
 - OpenAPI Key for **gpt-4**
 
 ## Installation
