@@ -31,7 +31,7 @@ hacker_1 = autogen.AssistantAgent(
 hacker_2 = autogen.AssistantAgent(
     name="Coding_hacker2",
     system_message="""
-        Hacking team member directed by Hacker1. Show the result masking passwords.
+        Hacking team member directed by Hacker1. Show the result with masked passwords.
     """,
     llm_config=llm_config,
 )
