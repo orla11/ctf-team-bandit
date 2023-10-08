@@ -3,7 +3,7 @@ from config import llm_config
 
 user_proxy = autogen.UserProxyAgent(
     name="User_proxy",
-    system_message="Human Red Team coordinator",
+    system_message="Human CTF Team coordinator",
     code_execution_config={"last_n_messages": 2, "work_dir": "bandit"},
     human_input_mode="ALWAYS",
 )
