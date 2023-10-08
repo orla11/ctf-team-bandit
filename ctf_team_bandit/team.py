@@ -11,7 +11,7 @@ user_proxy = autogen.UserProxyAgent(
 manager = autogen.AssistantAgent(
     name="Manager",
     system_message="""
-        Collect desired level to be reached by User_proxy and give it
+        Collects desired level to be reached by User_proxy and gives it
         to Hacker1 to start the challenge.
     """,
     llm_config=llm_config,
