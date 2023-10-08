@@ -25,6 +25,8 @@ This project is POC to showcase the power of multi-agent conversations patterns 
 
 ## Installation
 
+- Install dependencies
+
 `poetry install`
 
 - Activate poetry venv
