@@ -10,7 +10,7 @@ manager = autogen.GroupChatManager(groupchat=groupchat, llm_config=llm_config)
 # message = """
 #     As a well organized and espert hacking team, your goal is to try to complete
 #     all the levels of the challenge OverTheWire Bandit Wargame: https://overthewire.org/wargames/bandit/.
-#     Try to solve the problems with coding and report your results. 
+#     Try to solve the problems with coding and report your results.
 #     Start by going to Level 0 page: https://overthewire.org/wargames/bandit/bandit0.html,
 #     try to undertand what is the problem and hack your way up to a level given as input by User_proxy.
 #     Once the desired level is completed, at that point, Reporter will provide me a summary on the job done.
