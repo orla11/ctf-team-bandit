@@ -12,26 +12,19 @@ manager = autogen.AssistantAgent(
     name="Manager",
     system_message="""
         Collects desired level to be reached by User_proxy and gives it
-        to Hacker1 to start the challenge.
+        to Hacker to start the challenge. Manages the team. Does not write code.
     """,
     llm_config=llm_config,
 )
 
-hacker_1 = autogen.AssistantAgent(
-    name="Hacker1",
+hacker = autogen.AssistantAgent(
+    name="Hacker",
     system_message="""
-        Hacking Leader directing Coding_hacker2 in order to find a solution to the problem. 
-        Expert in hacking and coding. After getting the Level from the Manager,
-        start instructing Coding_hacker2. Furthermore, inform the Reporter on the 
-        findings and how problems where solved.
-    """,
-    llm_config=llm_config,
-)
-
-hacker_2 = autogen.AssistantAgent(
-    name="Coding_hacker2",
-    system_message="""
-        Hacking team member directed by Hacker1. Show the result with masked passwords.
+        Hacking Leader writing code as a solution to the current Level and problem. 
+        Expert in hacking and coding. Gets the goal Level from the Manager.
+        Write complete code solutions and report them to the Manager.
+        Furthermore, inform the Reporter on the findings and how problems where solved.
+        Refrain from executing code; instead, propose the coding scripts required to solve the challenges.
     """,
     llm_config=llm_config,
 )
@@ -39,9 +32,10 @@ hacker_2 = autogen.AssistantAgent(
 reporter = autogen.AssistantAgent(
     name="Reporter",
     system_message="""
-        At the end, use the information collected by the Hacker1
-        and Coding_hacker2 to generate a report summary of all details on what the 
-        team did to solve a problem and how they solved it as well as which is the level they reached.
+        At the end, use the information collected by the Hacker
+        to generate a report summary of all details on what the 
+        team did to solve a problem and how they solved it 
+        as well as which is the level they reached.
     """,
     llm_config=llm_config,
 )
