@@ -11,7 +11,7 @@ Here's how the CTF Team is organized:
 3. **AssistantAgent - Lead Hacker**: This agent impersonates the lead hacker, who will guide the reasoning and brainstorming as well as generating the code snipptes in order to find the solution for each level of the challenge.
 4. **AssistantAgent - Reporter**: This agent is responsible for providing a report summarizing all the challenges solved, as well as how the CTF Team managed to solve each level. The report is summarized based on the information reported by the Lead Hacker.
 
-> **Warning:** Automatically generating and executing code to login in into servers and manipulating the file system to extract passwords is a dangerous operation and totally unethical independently from the challenge or game at hand. For this reasons agents and llms based on gpt-4 model won't execute the code which might cause harm on systems or people. To clarify that, an additonal disclaimer is added to the challenge description provided to the team.
+> **Warning:** Automatically generating and executing code to login in into servers and manipulating the file system to extract passwords is a dangerous operation and totally unethical independently from the challenge or game at hand. For this reasons agents and llms based on gpt-4 model won't execute the code which might cause harm on systems or people. To clarify that, an additonal disclaimer is added to the challenge description provided to the team. The main goal of this project is to be informative and act as a source of knowledge and inspiration.
 
 ## AutoGen
 
